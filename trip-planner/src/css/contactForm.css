@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+.FormContainer{
+    font-family: "Poppins";
+    margin: 4rem 6rem;
+    color: #2a2a2a;
+}
+.FormContainer h1{
+    text-align: center;
+}
+.FormContainer form{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+.FormContainer input{
+    height: 3rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+    border: 1px solid #2a2a2a;
+}
+.FormContainer textarea{
+    font-family: "Poppins";
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+    border: 1px solid #2a2a2a;
+}
+.FormContainer button{
+    padding: .5rem ;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.FormContainer button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+@media screen and (max-width:850px) {
+    .FormContainer{
+        margin: 4rem 2rem;
+    }  
+    .FormContainer form{
+        padding-top: 2rem;
+        width: 90%;
+    }  
+}

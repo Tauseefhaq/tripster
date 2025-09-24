@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+    font-family: "Poppins";
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-box {
+  margin-top: 2rem;  
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 20px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.auth-box h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.auth-form input {
+  width: 95%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.auth-btn {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #01959a;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  background-color: #000;
+}
+
+.auth-toggle {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.auth-toggle span {
+  color: #01959a;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.auth-toggle span:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 850px) {
+  .auth-box {
+    margin-top: 5rem;
+    width: 280px;          /* smaller width */
+    padding: 1.2rem;       /* reduce padding */
+    border-radius: 15px;   /* softer corners */
+  }
+
+  .auth-box h1 {
+    font-size: 1.6rem;     /* smaller heading */
+    margin-bottom: 1rem;
+  }
+
+  .auth-form input {
+    padding: 0.6rem;       /* smaller inputs */
+    font-size: 0.9rem;
+    margin: 0.4rem 0;
+  }
+
+  .auth-btn {
+    padding: 0.6rem;       /* smaller button */
+    font-size: 0.9rem;
+  }
+
+  .auth-toggle {
+    font-size: 0.8rem;     /* smaller text */
+  }
+}

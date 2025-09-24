@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+    font-family: "Poppins";
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.hero-mid{
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.heroText{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.heroText h1{
+    background: white;
+    font-size: 3rem;
+    font-weight: 800;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heroText p{
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 0 2rem 0;
+}
+.heroText .show{
+    text-decoration: none;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: black;
+}
+.heroText .hide{
+    display: none;
+}
+@media screen and (max-width:550px) {
+    .heroText h1{
+        padding: 10px 20px;
+    }
+    .heroText p{
+        font-size: 1.1rem;
+        padding: 0 0 2rem 0;
+    }
+    .heroText .show{
+        padding: .6rem .5rem;
+        border-radius: 6px;
+        font-size: 1rem;
+    }
+}

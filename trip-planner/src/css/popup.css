@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); 
+  display: flex;
+  font-family: "Poppins";
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.modal {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  max-width: 450px;
+  width: 85%;
+  max-height: 90vh; /* make modal shorter */
+  overflow-y: auto;  /* scroll if content exceeds height */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  animation: popupFade 0.3s ease-in-out;
+  text-align: center;
+}
+
+.modal h2 {
+  margin-top: .6rem;
+  font-size: 3rem; /* bigger heading */
+  font-weight: 700; /* bold */
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 0.5rem auto 1rem;
+  display: block;
+}
+
+.modal p {
+  margin: 0.5rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem; /* slightly larger than before */
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 90%; /* wider text area inside modal */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal .price {
+  font-size: 1.1rem;  /* higher font for starting at */
+  font-weight: 700;    /* bolder */
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.close {
+  margin-top: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 25px;
+  background-color: black;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.book {
+  margin-top: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #01959a;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.book:hover {
+  background-color: #000;
+}
+
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
