@@ -1,1 +1,1 @@
-*Trip advisor project created using react*
+**Trip advisor project created using react**
