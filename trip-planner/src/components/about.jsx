@@ -7,7 +7,7 @@ function AboutText() {
       <p>
         Tripster is a solo project by Mohammed Tauseef Ul-Haq created for the
         sole purpose of showing the creator's prowess over the basic
-        fundamantals of React and Web Dev. It is a mock site of a travel agency
+        fundamentals of React and Web Dev. It is a mock site of a travel agency
         with listing popular sites and other basic functions like routing and
         dynamic components.
       </p>
